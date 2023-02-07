@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>BananaBacana</display-name>
+
+	<servlet>
+		<servlet-name>catalogar</servlet-name>
+		<servlet-class>dex.controller.catalogarAveController</servlet-class>
+	</servlet>
+
+
+	<servlet>
+		<servlet-name>entrar</servlet-name>
+		<servlet-class>dex.controller.entrarAlunoController</servlet-class>
+	</servlet>
+
+
+
+	<servlet>
+		<servlet-name>buscar</servlet-name>
+		<servlet-class>dex.controller.buscarAveController</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>modificar</servlet-name>
+		<servlet-class>dex.controller.modificarRegistroController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>catalogar</servlet-name>
+		<url-pattern>/catalogar</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>entrar</servlet-name>
+		<url-pattern>/entrarAluno</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>buscar</servlet-name>
+		<url-pattern>/buscarAve</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>modificar</servlet-name>
+		<url-pattern>/modificarRegistro</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>
